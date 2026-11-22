@@ -1,0 +1,907 @@
+(kicad_symbol_lib
+  (version 20220914)
+  (generator kicad_symbol_editor)
+  (symbol "74HC14_DIP"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "74HC14"
+      (at 0 -1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "ki_description" "Hex Schmitt-trigger inverter, DIP pinout order"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (symbol "74HC14_DIP_0_1"
+      (rectangle
+        (start -19.05 6.35)
+        (end 19.05 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "74HC14_DIP_1_1"
+      (pin input line
+        (at -15.24 -11.43 90)
+        (length 5.08)
+        (name "1A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 11.43 270)
+        (length 5.08)
+        (name "VCC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "14"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at -10.16 -11.43 90)
+        (length 5.08)
+        (name "1Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -10.16 11.43 270)
+        (length 5.08)
+        (name "6A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "13"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -5.08 -11.43 90)
+        (length 5.08)
+        (name "2A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at -5.08 11.43 270)
+        (length 5.08)
+        (name "6Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "12"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 0 -11.43 90)
+        (length 5.08)
+        (name "2Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 0 11.43 270)
+        (length 5.08)
+        (name "5A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 5.08 -11.43 90)
+        (length 5.08)
+        (name "3A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 5.08 11.43 270)
+        (length 5.08)
+        (name "5Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 10.16 -11.43 90)
+        (length 5.08)
+        (name "3Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 10.16 11.43 270)
+        (length 5.08)
+        (name "4A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -11.43 90)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 15.24 11.43 270)
+        (length 5.08)
+        (name "4Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "74HC02_DIP"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "74HC02"
+      (at 0 -1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "ki_description" "Quad 2-input NOR, DIP pinout order"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (symbol "74HC02_DIP_0_1"
+      (rectangle
+        (start -19.05 6.35)
+        (end 19.05 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "74HC02_DIP_1_1"
+      (pin output line
+        (at -15.24 -11.43 90)
+        (length 5.08)
+        (name "1Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 11.43 270)
+        (length 5.08)
+        (name "VCC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "14"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -10.16 -11.43 90)
+        (length 5.08)
+        (name "1A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at -10.16 11.43 270)
+        (length 5.08)
+        (name "4Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "13"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -5.08 -11.43 90)
+        (length 5.08)
+        (name "1B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -5.08 11.43 270)
+        (length 5.08)
+        (name "4B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "12"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 0 -11.43 90)
+        (length 5.08)
+        (name "2Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 0 11.43 270)
+        (length 5.08)
+        (name "4A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 5.08 -11.43 90)
+        (length 5.08)
+        (name "2A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 5.08 11.43 270)
+        (length 5.08)
+        (name "3Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 10.16 -11.43 90)
+        (length 5.08)
+        (name "2B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 10.16 11.43 270)
+        (length 5.08)
+        (name "3B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -11.43 90)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 15.24 11.43 270)
+        (length 5.08)
+        (name "3A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "74HC00_DIP"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "74HC00"
+      (at 0 -1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "ki_description" "Quad 2-input NAND, DIP pinout order"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (symbol "74HC00_DIP_0_1"
+      (rectangle
+        (start -19.05 6.35)
+        (end 19.05 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "74HC00_DIP_1_1"
+      (pin input line
+        (at -15.24 -11.43 90)
+        (length 5.08)
+        (name "1A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 11.43 270)
+        (length 5.08)
+        (name "VCC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "14"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -10.16 -11.43 90)
+        (length 5.08)
+        (name "1B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -10.16 11.43 270)
+        (length 5.08)
+        (name "4B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "13"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at -5.08 -11.43 90)
+        (length 5.08)
+        (name "1Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -5.08 11.43 270)
+        (length 5.08)
+        (name "4A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "12"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 0 -11.43 90)
+        (length 5.08)
+        (name "2A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 0 11.43 270)
+        (length 5.08)
+        (name "4Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 5.08 -11.43 90)
+        (length 5.08)
+        (name "2B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 5.08 11.43 270)
+        (length 5.08)
+        (name "3B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 10.16 -11.43 90)
+        (length 5.08)
+        (name "2Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 10.16 11.43 270)
+        (length 5.08)
+        (name "3A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -11.43 90)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 15.24 11.43 270)
+        (length 5.08)
+        (name "3Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "74HC08_DIP"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "74HC08"
+      (at 0 -1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "ki_description" "Quad 2-input AND, DIP pinout order"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (symbol "74HC08_DIP_0_1"
+      (rectangle
+        (start -19.05 6.35)
+        (end 19.05 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "74HC08_DIP_1_1"
+      (pin input line
+        (at -15.24 -11.43 90)
+        (length 5.08)
+        (name "1A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 11.43 270)
+        (length 5.08)
+        (name "VCC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "14"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -10.16 -11.43 90)
+        (length 5.08)
+        (name "1B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -10.16 11.43 270)
+        (length 5.08)
+        (name "4B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "13"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at -5.08 -11.43 90)
+        (length 5.08)
+        (name "1Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -5.08 11.43 270)
+        (length 5.08)
+        (name "4A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "12"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 0 -11.43 90)
+        (length 5.08)
+        (name "2A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 0 11.43 270)
+        (length 5.08)
+        (name "4Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "11"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 5.08 -11.43 90)
+        (length 5.08)
+        (name "2B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 5.08 11.43 270)
+        (length 5.08)
+        (name "3B"
+          (effects
+            (font
+              (size 1 1))))
+        (number "10"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 10.16 -11.43 90)
+        (length 5.08)
+        (name "2Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 10.16 11.43 270)
+        (length 5.08)
+        (name "3A"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -11.43 90)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 15.24 11.43 270)
+        (length 5.08)
+        (name "3Y"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "NE555_DIP"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "NE555"
+      (at 0 -1.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "ki_description" "Timer, DIP pinout order"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (symbol "NE555_DIP_0_1"
+      (rectangle
+        (start -11.43 6.35)
+        (end 11.43 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "NE555_DIP_1_1"
+      (pin power_in line
+        (at -7.62 -11.43 90)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -7.62 11.43 270)
+        (length 5.08)
+        (name "VCC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -2.54 -11.43 90)
+        (length 5.08)
+        (name "TRIG"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin open_collector line
+        (at -2.54 11.43 270)
+        (length 5.08)
+        (name "DIS"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin output line
+        (at 2.54 -11.43 90)
+        (length 5.08)
+        (name "OUT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 2.54 11.43 270)
+        (length 5.08)
+        (name "THR"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 7.62 -11.43 90)
+        (length 5.08)
+        (name "R"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 7.62 11.43 270)
+        (length 5.08)
+        (name "CV"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1))))))))

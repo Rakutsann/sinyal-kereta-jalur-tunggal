@@ -1,0 +1,15 @@
+# KiCad: backup, autosave, cache, local settings
+*-backups/
+*.bak
+*.bck
+_autosave-*
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+*.kicad_prl
+*.lck
+\#auto_saved_files#
+
+# OS
+.DS_Store
+Thumbs.db

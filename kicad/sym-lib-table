@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "sinyal")(type "KiCad")(uri "${KIPRJMOD}/sinyal.kicad_sym")(options "")(descr "DIP-order symbols for this project"))
+)
