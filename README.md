@@ -1,12 +1,30 @@
-# Single-Track Railway Signal · Sinyal Kereta Jalur Tunggal
+<div align="center">
 
-A railway signal for a single-track line, built only from logic gate ICs (74HC series) and an NE555 on two breadboards. No microcontroller, no code.
-*Sinyal kereta untuk jalur tunggal, dibuat hanya dari IC gerbang logika (seri 74HC) dan NE555 di dua breadboard. Tanpa mikrokontroler, tanpa kode.*
+<h1>Single-Track Railway Signal</h1>
+<p><b>Sinyal Kereta Jalur Tunggal</b></p>
 
-![Demo](media/demo.gif)
+<p>
+<img src="https://img.shields.io/badge/logic-74HC%20%2B%20NE555-1f6feb" alt="74HC + NE555">
+<img src="https://img.shields.io/badge/microcontroller-none-2ea44f" alt="No microcontroller">
+<img src="https://img.shields.io/badge/schematic-KiCad%207-314cb6" alt="KiCad 7">
+<img src="https://img.shields.io/badge/license-MIT-yellow" alt="MIT License">
+</p>
 
-Top: the real circuit. Bottom: animation synced to the same moments. Full demo video: [media/demo.mp4](media/demo.mp4).
-*Atas: rangkaian asli. Bawah: animasi yang disinkronkan dengan momen yang sama. Video demo lengkap: [media/demo.mp4](media/demo.mp4).*
+<p>A railway signal for a single-track line, built only from logic gate ICs and an NE555 on two breadboards.<br>
+<i>Sinyal kereta untuk jalur tunggal, dibuat hanya dari IC gerbang logika dan NE555 di dua breadboard.</i></p>
+
+<img src="media/demo.gif" alt="Demo" width="420">
+
+<p><sub>Top: the real circuit · Bottom: animation synced to the same moments<br>
+<i>Atas: rangkaian asli · Bawah: animasi yang disinkronkan</i></sub></p>
+
+<p>
+<a href="media/demo.mp4"><b>▶ Full demo video (85 s)</b></a> &nbsp;·&nbsp;
+<a href="https://kicanvas.org/?github=https://github.com/Rakutsann/sinyal-kereta-jalur-tunggal/blob/main/kicad/sinyal-kereta.kicad_sch"><b>View schematic in browser</b></a> &nbsp;·&nbsp;
+<a href="kicad/"><b>KiCad files</b></a>
+</p>
+
+</div>
 
 ## Features · Fitur
 
@@ -50,6 +68,8 @@ Sensor OUT (A/B) ─► NOR (74HC02) ◄── Reset (74HC14)
 
 ## LED roles · Peran LED
 
+<div align="center">
+
 | LED | Role | Peran |
 |---|---|---|
 | LED1 | Signal A green | Sinyal A hijau |
@@ -63,7 +83,11 @@ Sensor OUT (A/B) ─► NOR (74HC02) ◄── Reset (74HC14)
 | LED9 | Crossing light 1 | Lampu palang 1 |
 | LED10 | Crossing light 2 | Lampu palang 2 |
 
+</div>
+
 ## Bill of materials · Daftar komponen
+
+<div align="center">
 
 | Part | Qty | Note |
 |---|---|---|
@@ -83,16 +107,18 @@ Sensor OUT (A/B) ─► NOR (74HC02) ◄── Reset (74HC14)
 | MB102 power module (5 V) | 1 | |
 | Jumper wires | many | |
 
+</div>
+
 ## Schematic · Skematik
 
-![KiCad schematic](docs/skematik-kicad.png)
+<p align="center"><a href="docs/skematik-kicad.png"><img src="docs/skematik-kicad.png" alt="KiCad schematic" width="100%"></a></p>
 
 Made in KiCad 7. Open [`kicad/sinyal-kereta.kicad_pro`](kicad/) in KiCad 7 or newer, or view it in the browser with [KiCanvas](https://kicanvas.org/?github=https://github.com/Rakutsann/sinyal-kereta-jalur-tunggal/blob/main/kicad/sinyal-kereta.kicad_sch). The IC symbols are drawn in physical DIP pin order (pins 1–7 bottom, 14–8 top), so the schematic reads the same way as the chip on the breadboard. The netlist exported from KiCad was checked against the breadboard wiring: all 37 nets match.
 *Dibuat di KiCad 7. Buka [`kicad/sinyal-kereta.kicad_pro`](kicad/) di KiCad 7 atau lebih baru, atau lihat langsung di browser lewat [KiCanvas](https://kicanvas.org/?github=https://github.com/Rakutsann/sinyal-kereta-jalur-tunggal/blob/main/kicad/sinyal-kereta.kicad_sch). Simbol IC digambar sesuai urutan kaki fisik DIP (kaki 1–7 di bawah, 14–8 di atas), jadi skematiknya terbaca sama seperti chip di breadboard. Netlist hasil ekspor KiCad sudah dicocokkan dengan sambungan di breadboard: ke-37 jalurnya cocok.*
 
 ## Build · Hasil rakitan
 
-![Breadboard build](media/foto-breadboard.jpg)
+<p align="center"><img src="media/foto-breadboard.jpg" alt="Breadboard build" width="720"></p>
 
 The circuit was built and tested in stages, each with a visible result:
 *Rangkaian dirakit dan diuji bertahap, masing-masing dengan hasil yang terlihat:*
