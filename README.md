@@ -28,43 +28,46 @@
 
 ## Features · Fitur
 
-- When a train enters from A, track B is locked automatically (and vice versa).
-  *Saat kereta masuk dari A, jalur B otomatis terkunci (begitu juga sebaliknya).*
-- Train exit sensors release the lock.
-  *Sensor keluar kereta membuka kunci kembali.*
-- Level crossing lights blink while a train is on the track.
-  *Lampu palang perlintasan berkedip selama ada kereta di jalur.*
-- Emergency mode locks both tracks and makes the crossing blink faster.
-  *Mode darurat mengunci kedua jalur dan membuat lampu palang berkedip lebih cepat.*
-- Reset button returns everything to the clear state.
-  *Tombol reset mengembalikan semua ke kondisi aman.*
+- When train A enters, signal B turns red so no train is sent from B (and vice versa).
+  *Saat kereta A masuk, sinyal B jadi merah supaya tidak ada kereta yang diberangkatkan dari B (begitu juga sebaliknya).*
+- The exit sensor clears the track again.
+  *Sensor keluar mengosongkan jalur kembali.*
+- Level crossing lights blink alternately while a train is on the track.
+  *Lampu palang perlintasan berkedip bergantian selama ada kereta di jalur.*
+- If trains enter from both ends, the emergency LED lights up, both signals turn red, and the crossing blinks faster. Exit sensors are ignored until RESET is pressed.
+  *Jika kereta masuk dari kedua ujung, LED darurat menyala, kedua sinyal merah, dan palang berkedip lebih cepat. Sensor keluar diabaikan sampai tombol RESET ditekan.*
+- RESET returns everything to the clear state.
+  *RESET mengembalikan semua ke kondisi aman.*
 
 Sensors are simulated by touching jumper wires to the ground rail.
 *Sensor disimulasikan dengan menyentuhkan kabel jumper ke rel ground.*
 
 ## How it works · Cara kerja
 
-```
-Sensor IN (A/B) ──► NAND SR latch (74HC00) ──► Signal LEDs
-                         ▲     │
-Sensor OUT (A/B) ─► NOR (74HC02) ◄── Reset (74HC14)
-                               │
-                               ▼
-                   AND status (74HC08) ──► Status LEDs
-                               │
-        Emergency (74HC14) ──► NE555 astable ──► Crossing LEDs
+```mermaid
+flowchart LR
+    IN["Entry sensors<br/>A_IN, B_IN"] --> L["74HC00<br/>2 SR latches<br/>QA, QB"]
+    OUT["Exit sensors<br/>A_OUT, B_OUT"] --> N["74HC02<br/>exit logic (NOR)"]
+    RST["RESET"] --> S1["74HC14<br/>Schmitt"] --> N
+    N -- "clear latch" --> L
+    L -- "QA, QB" --> N
+    L --> SIG["Signal LEDs<br/>LED1–LED4"]
+    L --> AND["74HC08<br/>status (AND)"]
+    AND --> ST["Status LEDs<br/>LED5–LED8"]
+    AND -- "Clear, Emergency" --> S2["74HC14<br/>inverter"] --> T["NE555<br/>astable"]
+    T --> X["Crossing LEDs<br/>LED9, LED10"]
 ```
 
-- **74HC00 (NAND):** two SR latches remember which track is occupied, and each one blocks the other.
-  *Dua latch SR mengingat jalur mana yang terisi, dan saling mengunci.*
-- **74HC02 (NOR):** combines the exit sensor and reset to clear the latch.
-  *Menggabungkan sensor keluar dan reset untuk membuka latch.*
-- **74HC14 (Schmitt inverter):** clean signals for reset and emergency inputs.
-  *Sinyal bersih untuk input reset dan darurat.*
-- **74HC08 (AND):** decides the status: clear, train A, train B, or emergency.
-  *Menentukan status: aman, kereta A, kereta B, atau darurat.*
-- **NE555:** blinks the crossing lights. A diode on the CV pin makes it blink faster in emergency mode.
-  *Membuat lampu palang berkedip. Dioda di kaki CV membuat kedipnya lebih cepat saat darurat.*
+- **74HC00 (NAND):** two SR latches, one per track, remember whether train A (QA) or train B (QB) has entered.
+  *Dua latch SR, satu per jalur, mengingat apakah kereta A (QA) atau kereta B (QB) sudah masuk.*
+- **74HC02 (NOR):** the exit sensor or RESET clears the latch. The exit only works if the other track is not occupied.
+  *Sensor keluar atau RESET membuka latch. Sensor keluar hanya berlaku kalau jalur lain tidak terisi.*
+- **74HC14 (Schmitt inverter):** cleans the RESET signal and turns the status into enable signals for the NE555.
+  *Merapikan sinyal RESET dan mengubah status menjadi sinyal pengaktif untuk NE555.*
+- **74HC08 (AND):** decides the status: clear, train A, train B, or emergency (both latches set).
+  *Menentukan status: aman, kereta A, kereta B, atau darurat (kedua latch aktif).*
+- **NE555:** runs only when the track is not clear, blinking the crossing lights alternately. In emergency, a diode on the CV pin makes it blink faster.
+  *Hanya berjalan saat jalur tidak aman, membuat lampu palang berkedip bergantian. Saat darurat, dioda di kaki CV membuat kedipnya lebih cepat.*
 
 ## LED roles · Peran LED
 
